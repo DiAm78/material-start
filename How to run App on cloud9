@@ -1,0 +1,22 @@
+
+AngularJS lets you write client-side web
+applications as if you had a smarter browser.
+
+Follow these steps to create an AngularJS application using the official project
+template:
+
+Note: We are choosing the PHP workspace type in order to have the Apache runner as a default so you can just click Run Project to get started. This doesn't
+limit the choice of the backend technology you might want to use.
+
+1. Create a workspace and choose the PHP workspace type
+2. Open a Terminal, or using the pre-existing one at the bottom
+3. Run the following commands in the Terminal:
+    rm -rf * .c9
+4. git clone https://github.com/angular/angular-seed.git angular-seed
+5. cd angular-seed
+6. npm install
+7. mv package.json package.json.bak
+8. jq '.scripts.start="http-server -a $IP -p $PORT"' package.json.bak > package.json
+9. Click the Run Project button in the top menu of the IDE
+
+10. Click on preview to view the app
